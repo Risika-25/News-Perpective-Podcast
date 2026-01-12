@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Perspective Podcast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>📰 News Perspective Podcast</h1>
+            <p>Listen to the same story from different perspectives</p>
+        </header>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search for a topic (e.g., climate change, AI, sports)"
+            >
+            <button id="searchBtn">Search News</button>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading hidden">
+            <p>🔍 Searching for news...</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error" class="error hidden"></div>
+
+        <!-- Audio Controls -->
+        <div id="audioControls" class="audio-controls hidden">
+            <button id="playAllBtn">🎙️ Play All Perspectives</button>
+            <button id="stopBtn">⏹️ Stop</button>
+            <div id="currentlyPlaying" class="currently-playing"></div>
+        </div>
+
+        <!-- Articles Container -->
+        <div id="articlesContainer" class="articles-container"></div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3>How it works:</h3>
+            <ol>
+                <li>Search for any news topic</li>
+                <li>We'll find articles from different sources</li>
+                <li>Click "Play All Perspectives" to hear how different outlets cover the story</li>
+                <li>Each source gets a different voice!</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
